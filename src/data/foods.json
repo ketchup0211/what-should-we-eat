@@ -1,0 +1,561 @@
+[
+  {
+    "id": 1,
+    "name": "닭한마리",
+    "category": "한식",
+    "variants": [
+      { "id": 101, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "삼계탕",
+    "category": "한식",
+    "variants": [
+      { "id": 201, "detail": "기본", "weight": 1, "weather": ["Hot"] }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "물회",
+    "category": "한식",
+    "variants": [
+      { "id": 301, "detail": "기본", "weight": 1, "weather": ["Hot"] }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "양꼬치",
+    "category": "중식",
+    "variants": [
+      { "id": 401, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "오차즈케",
+    "category": "일식",
+    "variants": [
+      { "id": 501, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "매운탕",
+    "category": "한식",
+    "variants": [
+      { "id": 601, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "황태백짬뽕",
+    "category": "중식",
+    "variants": [
+      { "id": 701, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "포케",
+    "category": "양식",
+    "variants": [
+      { "id": 801, "detail": "기본", "weight": 1, "weather": ["Hot"] }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "마제소바",
+    "category": "일식",
+    "variants": [
+      { "id": 901, "detail": "기본", "weight": 1, "weather": ["Hot"] }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "카츠",
+    "category": "일식",
+    "variants": [
+      { "id": 1001, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "불고기 백반",
+    "category": "한식",
+    "variants": [
+      { "id": 1101, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "고등어 무조림",
+    "category": "한식",
+    "variants": [
+      { "id": 1201, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "고등어 감자조림",
+    "category": "한식",
+    "variants": [
+      { "id": 1301, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "신전떡볶이",
+    "category": "한식",
+    "variants": [
+      { "id": 1401, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "물냉면",
+    "category": "한식",
+    "variants": [
+      { "id": 1501, "detail": "기본", "weight": 1, "weather": ["Hot"] }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "밀면",
+    "category": "한식",
+    "variants": [
+      { "id": 1601, "detail": "기본", "weight": 1, "weather": ["Hot"] }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "멸치국수",
+    "category": "한식",
+    "variants": [
+      { "id": 1701, "detail": "기본", "weight": 1, "weather": ["Hot"] }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "요거트 아이스크림",
+    "category": "디저트",
+    "variants": [
+      { "id": 1801, "detail": "기본", "weight": 1, "weather": ["Hot"] }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "츄러스",
+    "category": "디저트",
+    "variants": [
+      { "id": 1901, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "푸라닭 후라이드",
+    "category": "한식",
+    "variants": [
+      { "id": 2001, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "자메이카 통다리구이",
+    "category": "양식",
+    "variants": [
+      { "id": 2101, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "국밥",
+    "category": "한식",
+    "variants": [
+      { "id": 2201, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "불에 구운 마시멜로우",
+    "category": "디저트",
+    "variants": [
+      { "id": 2301, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "삼겹살과 된장찌개, 계란찜",
+    "category": "한식",
+    "variants": [
+      { "id": 2401, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "땡초우동",
+    "category": "일식",
+    "variants": [
+      { "id": 2501, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "감자탕",
+    "category": "한식",
+    "variants": [
+      { "id": 2601, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "토마토스파게티",
+    "category": "양식",
+    "variants": [
+      { "id": 2701, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "봉골레 파스타",
+    "category": "양식",
+    "variants": [
+      { "id": 2801, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "샐러드 파스타",
+    "category": "양식",
+    "variants": [
+      { "id": 2901, "detail": "기본", "weight": 1, "weather": ["Hot"] }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "고등어구이",
+    "category": "한식",
+    "variants": [
+      { "id": 3001, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "오뎅탕",
+    "category": "한식",
+    "variants": [
+      { "id": 3101, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "묵밥",
+    "category": "한식",
+    "variants": [
+      { "id": 3201, "detail": "기본", "weight": 1, "weather": ["Hot"] }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "김밥",
+    "category": "한식",
+    "variants": [
+      { "id": 3301, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "설렁탕",
+    "category": "한식",
+    "variants": [
+      { "id": 3401, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "바지락칼국수",
+    "category": "한식",
+    "variants": [
+      { "id": 3501, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "닭칼국수",
+    "category": "한식",
+    "variants": [
+      { "id": 3601, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "족발",
+    "category": "한식",
+    "variants": [
+      { "id": 3701, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "마라탕",
+    "category": "중식",
+    "variants": [
+      { "id": 3801, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "마라샹궈",
+    "category": "중식",
+    "variants": [
+      { "id": 3901, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "우육면",
+    "category": "중식",
+    "variants": [
+      { "id": 4001, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "김치찌개",
+    "category": "한식",
+    "variants": [
+      { "id": 4101, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "김치찜",
+    "category": "한식",
+    "variants": [
+      { "id": 4201, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "닭갈비",
+    "category": "한식",
+    "variants": [
+      { "id": 4301, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 44,
+    "name": "꽃게탕",
+    "category": "한식",
+    "variants": [
+      { "id": 4401, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "도리탕",
+    "category": "한식",
+    "variants": [
+      { "id": 4501, "detail": "꽃게", "weight": 1, "weather": ["Cold"] },
+      { "id": 4502, "detail": "꽃게", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "쌀국수",
+    "category": "양식",
+    "variants": [
+      { "id": 4601, "detail": "기본", "weight": 1, "weather": ["Hot"] }
+    ]
+  },
+  {
+    "id": 47,
+    "name": "동(덮밥)",
+    "category": "일식",
+    "variants": [
+      { "id": 4701, "detail": "가츠", "weight": 1, "weather": ["any"] },
+      { "id": 4702, "detail": "사케", "weight": 1, "weather": ["any"] },
+      { "id": 4703, "detail": "규", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "초밥",
+    "category": "일식",
+    "variants": [
+      { "id": 4801, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "계란말이",
+    "category": "한식",
+    "variants": [
+      { "id": 4901, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "오차즈케",
+    "category": "일식",
+    "variants": [
+      { "id": 5001, "detail": "기본", "weight": 1, "weather": ["Cold"] },
+      { "id": 5002, "detail": "명란", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "명란 오이 구이",
+    "category": "일식",
+    "variants": [
+      { "id": 5101, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "피자",
+    "category": "양식",
+    "variants": [
+      { "id": 5201, "detail": "기본", "weight": 1, "weather": ["any"] },
+      { "id": 5202, "detail": "페퍼로니", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "고구마 맛탕",
+    "category": "디저트",
+    "variants": [
+      { "id": 5301, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "추어탕",
+    "category": "한식",
+    "variants": [
+      { "id": 5401, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "수제비",
+    "category": "한식",
+    "variants": [
+      { "id": 5501, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "오리고기",
+    "category": "한식",
+    "variants": [
+      { "id": 5601, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 57,
+    "name": "텐동",
+    "category": "일식",
+    "variants": [
+      { "id": 5701, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 58,
+    "name": "돈까스",
+    "category": "양식",
+    "variants": [
+      { "id": 5801, "detail": "경양식", "weight": 1, "weather": ["any"] },
+      { "id": 5802, "detail": "고구마 치즈", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 59,
+    "name": "조개구이",
+    "category": "한식",
+    "variants": [
+      { "id": 5901, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "굴구이",
+    "category": "한식",
+    "variants": [
+      { "id": 6001, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "빙수",
+    "category": "디저트",
+    "variants": [
+      { "id": 6101, "detail": "기본", "weight": 1, "weather": ["Hot"] }
+    ]
+  },
+  {
+    "id": 62,
+    "name": "밀푀유나베",
+    "category": "일식",
+    "variants": [
+      { "id": 6201, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "샤브샤브",
+    "category": "일식",
+    "variants": [
+      { "id": 6301, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 64,
+    "name": "월남쌈",
+    "category": "양식",
+    "variants": [
+      { "id": 6401, "detail": "기본", "weight": 1, "weather": ["Hot"] }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "제주 고기국수",
+    "category": "한식",
+    "variants": [
+      { "id": 6501, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "라멘",
+    "category": "일식",
+    "variants": [
+      { "id": 6601, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 67,
+    "name": "솥밥",
+    "category": "한식",
+    "variants": [
+      { "id": 6701, "detail": "기본", "weight": 1, "weather": ["Cold"] }
+    ]
+  },
+  {
+    "id": 68,
+    "name": "카레",
+    "category": "양식",
+    "variants": [
+      { "id": 6801, "detail": "기본", "weight": 1, "weather": ["any"] }
+    ]
+  },
+  {
+    "id": 69,
+    "name": "덮밥",
+    "category": "한식",
+    "variants": [
+      { "id": 6901, "detail": "육회", "weight": 1, "weather": ["any"] },
+      { "id": 6902, "detail": "불고기", "weight": 1, "weather": ["any"] }
+    ]
+  }
+]
