@@ -1,13 +1,14 @@
 import { useState } from "react";
 import foods from "./data/foods.json";
+import getRandomFood from "./utils/getRandomFood";
 
 function App() {
-  function getRandomFood(foods) {
-    //Weight와 날씨를 고려하지 않은 랜덤 로직
-  }
+  let randomFood = getRandomFood(foods);
   return (
     <>
-      <div>{getRandomFood(foods)}</div>
+      <div>
+        <h1>{randomFood}</h1>
+      </div>
     </>
   );
 }

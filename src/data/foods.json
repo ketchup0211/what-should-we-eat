@@ -368,16 +368,7 @@
       { "id": 4601, "detail": "기본", "weight": 1, "weather": ["Hot"] }
     ]
   },
-  {
-    "id": 47,
-    "name": "동(덮밥)",
-    "category": "일식",
-    "variants": [
-      { "id": 4701, "detail": "가츠", "weight": 1, "weather": ["any"] },
-      { "id": 4702, "detail": "사케", "weight": 1, "weather": ["any"] },
-      { "id": 4703, "detail": "규", "weight": 1, "weather": ["any"] }
-    ]
-  },
+
   {
     "id": 48,
     "name": "초밥",
