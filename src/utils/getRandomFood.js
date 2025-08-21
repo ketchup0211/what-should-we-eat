@@ -11,7 +11,7 @@ export default function getRandomFood(foods) {
 
     let result = randomFood.name;
     if (variants !== "기본") {
-      result += variants;
+      result = variants + result;
     }
     return result;
   } else {
