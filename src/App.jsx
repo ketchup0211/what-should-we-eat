@@ -1,13 +1,10 @@
-import { useState } from "react";
-import foods from "./data/foods.json";
-import getRandomFood from "./utils/getRandomFood";
+import SlotMachine from "./components/SlotMachine";
 
 function App() {
-  let randomFood = getRandomFood(foods);
   return (
     <>
       <div>
-        <h1>{randomFood}</h1>
+        <SlotMachine />
       </div>
     </>
   );
