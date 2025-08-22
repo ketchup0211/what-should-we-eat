@@ -1,13 +1,13 @@
-import SlotMachine from "./components/SlotMachine";
-import foods from "./data/foods.json";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <>
-      <div>
-        <SlotMachine foods={foods} />
-      </div>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
