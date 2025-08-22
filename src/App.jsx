@@ -1,10 +1,11 @@
 import SlotMachine from "./components/SlotMachine";
+import foods from "./data/foods.json";
 
 function App() {
   return (
     <>
       <div>
-        <SlotMachine />
+        <SlotMachine foods={foods} />
       </div>
     </>
   );

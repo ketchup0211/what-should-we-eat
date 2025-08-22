@@ -1,18 +1,11 @@
-import { useState } from "react";
-import foods from "../data/foods.json";
-import getRandomFood from "../utils/getRandomFood";
+import useRandomFood from "../hooks/useRandomFood";
 
-export default function SlotMachine() {
-  const [randomFood, setRandomFood] = useState("?");
-  const onClick = () => {
-    setRandomFood(getRandomFood(foods));
-  };
+export default function SlotMachine({ foods }) {
+  const { randomFood, pickRandomFood } = useRandomFood(foods);
   return (
-    <>
-      <div>
-        <h1>{randomFood}</h1>
-        <button onClick={onClick}>랜덤 룰렛</button>
-      </div>
-    </>
+    <div>
+      <h1>{randomFood}</h1>
+      <button onClick={pickRandomFood}>랜덤 룰렛</button>
+    </div>
   );
 }
