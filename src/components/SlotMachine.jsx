@@ -1,5 +1,6 @@
 import { useState } from "react";
 import useRandomFood from "../hooks/useRandomFood";
+import Button from "./common/Button";
 import styled from "styled-components";
 
 export default function SlotMachine({ foods }) {
@@ -17,11 +18,11 @@ export default function SlotMachine({ foods }) {
       <Result>{randomFood}</Result>
       {clicked ? (
         <ButtonContainer>
-          <Button>싫어!</Button>
-          <Button>맛있겠다!</Button>
+          <Button innerText="싫어!" onClick={pickRandomFood} />
+          <Button innerText="맛있겠다!" />
         </ButtonContainer>
       ) : (
-        <Button onClick={handleClick}>랜덤 룰렛</Button>
+        <Button innerText="랜덤 룰렛" onClick={handleClick} />
       )}
     </Container>
   );
@@ -45,17 +46,4 @@ const Result = styled.h1`
   padding: 10px;
   font-size: 42px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-`;
-const Button = styled.button`
-  background-color: tomato;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  padding: 15px;
-  margin: 10px;
-
-  &:hover {
-    filter: brightness(0.95);
-  }
 `;
