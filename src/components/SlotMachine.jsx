@@ -6,30 +6,31 @@ import styled from "styled-components";
 export default function SlotMachine({ foods }) {
   const { randomFood, pickRandomFood } = useRandomFood(foods);
   const [clicked, setClicked] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleClick = () => {
     setClicked(true);
+    setLoading(true);
   };
 
   useEffect(() => {
     let timeOutID;
-    if (clicked) {
+    if (loading) {
       timeOutID = setTimeout(() => {
-        pickRandomFood("...");
         pickRandomFood();
-        setClicked(false);
-      }, 2000);
+        setLoading(false);
+      }, 1000);
     }
     return () => clearTimeout(timeOutID);
-  }, [clicked]);
+  }, [loading]);
 
   return (
     <Container>
       <p>오늘의 메뉴는</p>
-      <Result>{randomFood}</Result>
+      <Result>{loading ? "고민하는 중..." : randomFood}</Result>
       {clicked ? (
         <ButtonContainer>
-          <Button innerText="싫어!" onClick={pickRandomFood} />
+          <Button innerText="싫어!" onClick={handleClick} />
           <Button innerText="맛있겠다!" />
         </ButtonContainer>
       ) : (
