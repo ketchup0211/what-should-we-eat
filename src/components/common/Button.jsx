@@ -5,12 +5,14 @@ export default function Button({
   onClick = null,
   backgroundColor = "tomato",
   textColor = "white",
+  disabled = false,
 }) {
   return (
     <Btn
       onClick={onClick}
       $backgroundColor={backgroundColor}
       $textColor={textColor}
+      disabled={disabled}
     >
       {innerText}
     </Btn>

@@ -7,10 +7,16 @@ export default function SlotMachine({ foods }) {
   const { randomFood, pickRandomFood } = useRandomFood(foods);
   const [clicked, setClicked] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [selected, setSelected] = useState(false);
 
   const handleClick = () => {
+    setSelected(false);
     setClicked(true);
     setLoading(true);
+  };
+
+  const handleSelect = () => {
+    setSelected(true);
   };
 
   useEffect(() => {
@@ -27,11 +33,21 @@ export default function SlotMachine({ foods }) {
   return (
     <Container>
       <p>오늘의 메뉴는</p>
-      <Result>{loading ? "고민하는 중..." : randomFood}</Result>
+      <Result>
+        {loading
+          ? "고민하는 중..."
+          : selected
+          ? "오늘도 밥 맛있게 먹어! "
+          : randomFood}
+      </Result>
       {clicked ? (
         <ButtonContainer>
-          <Button innerText="싫어!" onClick={handleClick} />
-          <Button innerText="맛있겠다!" />
+          <Button innerText="싫어!" onClick={handleClick} disabled={loading} />
+          <Button
+            innerText="맛있겠다!"
+            onClick={handleSelect}
+            disabled={loading}
+          />
         </ButtonContainer>
       ) : (
         <Button innerText="랜덤 룰렛" onClick={handleClick} />
