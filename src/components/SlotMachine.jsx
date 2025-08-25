@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import useRandomFood from "../hooks/useRandomFood";
 import Button from "./common/Button";
 import styled from "styled-components";
@@ -8,9 +8,20 @@ export default function SlotMachine({ foods }) {
   const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
-    pickRandomFood();
     setClicked(true);
   };
+
+  useEffect(() => {
+    let timeOutID;
+    if (clicked) {
+      timeOutID = setTimeout(() => {
+        pickRandomFood("...");
+        pickRandomFood();
+        setClicked(false);
+      }, 2000);
+    }
+    return () => clearTimeout(timeOutID);
+  }, [clicked]);
 
   return (
     <Container>
