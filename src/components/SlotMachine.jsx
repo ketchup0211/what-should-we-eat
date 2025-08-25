@@ -5,13 +5,11 @@ import styled from "styled-components";
 
 export default function SlotMachine({ foods }) {
   const { randomFood, pickRandomFood } = useRandomFood(foods);
-  const [clicked, setClicked] = useState(false);
   const [loading, setLoading] = useState(false);
   const [selected, setSelected] = useState(false);
 
   const handleClick = () => {
     setSelected(false);
-    setClicked(true);
     setLoading(true);
   };
 
@@ -40,7 +38,7 @@ export default function SlotMachine({ foods }) {
           ? "오늘도 밥 맛있게 먹어!"
           : randomFood}
       </Result>
-      {clicked ? (
+      {randomFood !== "?" ? (
         <ButtonContainer>
           <Button innerText="싫어!" onClick={handleClick} disabled={loading} />
           {selected ? null : (
