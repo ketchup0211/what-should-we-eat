@@ -50,7 +50,11 @@ export default function SlotMachine({ foods }) {
           )}
         </ButtonContainer>
       ) : (
-        <Button innerText="랜덤 룰렛" onClick={handleClick} />
+        <Button
+          innerText="랜덤 룰렛"
+          onClick={handleClick}
+          disabled={loading}
+        />
       )}
     </Container>
   );
