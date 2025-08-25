@@ -1,3 +1,6 @@
+import styled from "styled-components";
+import MenuBoard from "../components/FoodList/MenuBoard";
+
 export default function FoodList() {
-  return <h1>FoodList</h1>;
+  return <MenuBoard />;
 }
