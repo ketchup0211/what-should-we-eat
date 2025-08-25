@@ -65,7 +65,11 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+  padding: 30px;
+  background-color: rebeccapurple;
 `;
 
 const ButtonContainer = styled.div`
