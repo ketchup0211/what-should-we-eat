@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import useRandomFood from "../hooks/useRandomFood";
-import Button from "./common/Button";
+import useRandomFood from "../../hooks/useRandomFood";
+import Button from "../common/Button";
 import styled from "styled-components";
 
 export default function SlotMachine({ foods }) {
