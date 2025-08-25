@@ -25,12 +25,12 @@ export default function MenuBar() {
 
 const Container = styled.div`
   background-color: green;
-  height: 60px;
+  height: 55px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
 `;
 
 const MenuLink = styled(Link)`

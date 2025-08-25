@@ -15,6 +15,11 @@ export default function MenuBoard() {
 
 const Container = styled.div`
   background-color: gray;
-  width: 40vw;
-  height: 80vh;
+  width: 350px;
+  height: 600px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
