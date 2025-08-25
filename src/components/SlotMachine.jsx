@@ -67,9 +67,9 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
   padding: 30px;
-  background-color: rebeccapurple;
+  background-color: gainsboro;
 `;
 
 const ButtonContainer = styled.div`
@@ -80,6 +80,6 @@ const ButtonContainer = styled.div`
 
 const Result = styled.h1`
   padding: 10px;
-  font-size: 42px;
+  font-size: 2.5rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 `;
