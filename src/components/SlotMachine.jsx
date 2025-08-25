@@ -43,11 +43,13 @@ export default function SlotMachine({ foods }) {
       {clicked ? (
         <ButtonContainer>
           <Button innerText="싫어!" onClick={handleClick} disabled={loading} />
-          <Button
-            innerText="맛있겠다!"
-            onClick={handleSelect}
-            disabled={loading}
-          />
+          {selected ? null : (
+            <Button
+              innerText={"맛있겠다!"}
+              onClick={handleSelect}
+              disabled={loading}
+            />
+          )}
         </ButtonContainer>
       ) : (
         <Button innerText="랜덤 룰렛" onClick={handleClick} />
