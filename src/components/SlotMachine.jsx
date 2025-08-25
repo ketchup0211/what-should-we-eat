@@ -37,7 +37,7 @@ export default function SlotMachine({ foods }) {
         {loading
           ? "고민하는 중..."
           : selected
-          ? "오늘도 밥 맛있게 먹어! "
+          ? "오늘도 밥 맛있게 먹어!"
           : randomFood}
       </Result>
       {clicked ? (
