@@ -12,7 +12,7 @@ export default function getCurrentFoodList() {
     if (!isVarientExist(food.name)) foodList.push(food.name);
     else {
       const foodArr = food.variants.map((variant) => {
-        if (variant == "기본") return food.name;
+        if (variant.detail === "기본") return food.name;
         else {
           return food.name + variant.detail;
         }
