@@ -15,10 +15,14 @@ export default function MenuBoard() {
     setDisplay(event.target.id);
   };
 
+  const goToMenu = () => {
+    setDisplay("");
+  };
+
   const components = {
-    [DISPLAY.UPLOADED]: <Uploaded />,
-    [DISPLAY.NEW]: <Uploaded />,
-    [DISPLAY.HOLD]: <Uploaded />,
+    [DISPLAY.UPLOADED]: <Uploaded goToMenu={goToMenu} />,
+    [DISPLAY.NEW]: <Uploaded goToMenu={goToMenu} />,
+    [DISPLAY.HOLD]: <Uploaded goToMenu={goToMenu} />,
   };
 
   return (

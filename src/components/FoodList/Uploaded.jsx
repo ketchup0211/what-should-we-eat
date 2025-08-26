@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import getCurrentFoodList from "../../utils/getCurrentFoodList";
 
-export default function Uploaded() {
+export default function Uploaded({ goToMenu }) {
   const foodList = getCurrentFoodList();
   return (
     <Container>
+      <p onClick={goToMenu}>메뉴로 가기</p>
       <Title>현재 음식 목록 ({foodList.length})</Title>
       <FoodContainer>
         {foodList.map((food, id) => {
@@ -34,6 +35,7 @@ const Title = styled.div`
   background-color: gray;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  z-index: 3;
 `;
 const FoodContainer = styled.div`
   display: flex;
