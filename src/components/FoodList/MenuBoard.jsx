@@ -3,46 +3,46 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Uploaded from "./Uploaded";
 
-const DISPLAY = {
-  INIT: "",
-  UPLOADED: "uploaded",
-  NEW: "new",
-  HOLD: "hold",
-};
-
 export default function MenuBoard() {
+  const DISPLAY = {
+    INIT: "",
+    UPLOADED: "uploaded",
+    NEW: "new",
+    HOLD: "hold",
+  };
   const [display, setDisplay] = useState(DISPLAY.INIT);
   const onClick = (event) => {
     setDisplay(event.target.id);
   };
-  const renderContent = () => {
-    switch (display) {
-      case DISPLAY.UPLOADED:
-        return <Uploaded />;
-      case DISPLAY.NEW:
-        return <Uploaded />;
-      case DISPLAY.HOLD:
-        return <Uploaded />;
-      default:
-        return (
-          <>
-            <Title>메뉴판</Title>
-            <Lists>
-              <List id="uploaded" onClick={onClick}>
-                업로드된 메뉴들
-              </List>
-              <List id="new" onClick={onClick}>
-                신메뉴 구경하기
-              </List>
-              <List id="hold" onClick={onClick}>
-                보류 상태인 메뉴들
-              </List>
-            </Lists>
-          </>
-        );
-    }
+
+  const components = {
+    [DISPLAY.UPLOADED]: <Uploaded />,
+    [DISPLAY.NEW]: <Uploaded />,
+    [DISPLAY.HOLD]: <Uploaded />,
   };
-  return <Container>{renderContent()}</Container>;
+
+  return (
+    <Container>
+      {display === DISPLAY.INIT ? (
+        <>
+          <Title>메뉴판</Title>
+          <Lists>
+            <List id={DISPLAY.UPLOADED} onClick={onClick}>
+              업로드된 메뉴들
+            </List>
+            <List id={DISPLAY.NEW} onClick={onClick}>
+              신메뉴 구경하기
+            </List>
+            <List id={DISPLAY.HOLD} onClick={onClick}>
+              보류 상태인 메뉴들
+            </List>
+          </Lists>
+        </>
+      ) : (
+        components[display] || null
+      )}
+    </Container>
+  );
 }
 
 const Container = styled.div`
